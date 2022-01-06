@@ -1,0 +1,34 @@
+{
+  "name": "priority-queue-typescript",
+  "version": "1.0.1",
+  "repository": "https://github.com/childrentime/PriorityQueue.git",
+  "author": "儿时 <58261676+childrentime@users.noreply.github.com>",
+  "license": "MIT",
+  "description": "Priority queue data structure where you are able to set your own compare function.",
+  "main": "src/priority-queue/PriorityQueue.js",
+  "types": "src/priority-queue/PriorityQueue.ts",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/jest": "^27.0.3",
+    "babel-jest": "^27.4.4",
+    "jest": "^27.4.4"
+  },
+  "scripts": {
+    "build": "tsc src/priority-queue/PriorityQueue.ts",
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "keywords": [
+    "priority-queue",
+    "heap",
+    "custom-comparator",
+    "comparator",
+    "data-structure",
+    "data-structures",
+    "priority",
+    "typescript",
+    "queue"
+  ]
+}
