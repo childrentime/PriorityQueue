@@ -161,6 +161,7 @@ export default class PriorityQueue<T extends Object> {
   }
 
   public clear(): void {
+    // @ts-ignore
     for (let item of this._queue) {
       // @ts-ignore:
       item = null;
