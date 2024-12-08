@@ -32,6 +32,7 @@
     "babel-jest": "^27.4.4",
     "bunchee": "^6.0.3",
     "consola": "^3.2.3",
+    "esno": "^4.8.0",
     "jest": "^27.4.4"
   },
   "scripts": {
@@ -39,7 +40,7 @@
     "test": "jest",
     "coverage": "jest --coverage",
     "release:prepare": "bump",
-    "release": "esno scripts/release.ts"
+    "release": "esno scripts/publish.ts"
   },
   "keywords": [
     "priority-queue",
