@@ -1,3 +1,6 @@
+/**
+ * @deprecated use named export
+ */
 export default class PriorityQueue<T extends Object> {
   private _queue: Array<T>;
   private _size: number = 0;
@@ -80,7 +83,10 @@ export default class PriorityQueue<T extends Object> {
       let object = this._queue[child];
       let right = child + 1;
       // compare left right child, assgn child the bigger one
-      if (right < this._size && this._comparator!(object, this._queue[right]) > 0) {
+      if (
+        right < this._size &&
+        this._comparator!(object, this._queue[right]) > 0
+      ) {
         object = this._queue[(child = right)];
       }
       //compare item and child if bigger is item, break
@@ -162,8 +168,7 @@ export default class PriorityQueue<T extends Object> {
 
   public clear(): void {
     for (let item of this._queue) {
-      // @ts-ignore:
-      item = null;
+      (item as any) = null;
     }
     this._size = 0;
   }
@@ -196,3 +201,5 @@ export default class PriorityQueue<T extends Object> {
     };
   }
 }
+
+export { PriorityQueue };

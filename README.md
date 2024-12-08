@@ -1,5 +1,5 @@
 ```ts
-import PriorityQueue from '../PriorityQueue';
+import { PriorityQueue } from 'priority-queue-typescript';
 
 describe('PriorityQueue', () => {
   it('should create empty priorityQueue', () => {
