@@ -1,7 +1,4 @@
-/**
- * @deprecated use named export
- */
-export default class PriorityQueue<T extends Object> {
+class PriorityQueue<T extends Object> {
   private _queue: Array<T>;
   private _size: number = 0;
   private _comparator: Function | null;
@@ -202,4 +199,6 @@ export default class PriorityQueue<T extends Object> {
   }
 }
 
+/** @deprecated */
+export default PriorityQueue;
 export { PriorityQueue };
