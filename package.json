@@ -1,11 +1,14 @@
 {
   "name": "priority-queue-typescript",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "repository": "https://github.com/childrentime/PriorityQueue.git",
   "author": "儿时 <58261676+childrentime@users.noreply.github.com>",
   "license": "MIT",
   "description": "Priority queue data structure where you are able to set your own compare function.",
   "sideEffects": false,
+  "files": [
+    "dist"
+  ],
   "exports": {
     "./package.json": "./package.json",
     ".": {
